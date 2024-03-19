@@ -74,3 +74,21 @@ input[type="text"]:focus, input[type="email"]:focus {
 .grid div{
     border: 1px solid #030;        
 }
+
+.menor{
+    display: none;
+}
+
+@media (max-width:800px) {
+    .maior {
+        display: none;
+    }
+    .menor{
+        display: grid;
+        grid-template-columns: 10px 1fr 1fr 1fr;
+        grid-auto-rows: auto;
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+}
